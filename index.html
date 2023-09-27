@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch y peticiones</title>
+    <script src="./main.js" async defer></script>
+    <script src="./fetch.js" async defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--br>
+    <button id="btn-counter">Counter ++</button>
+    <p id="counter"></p-->
+
+    <div class="container">
+        <div class="card--container">
+        </div>
+        <div class="container row">
+            <label for="poke-name">Pokemon (Name / ID):</label>
+            <input id="poke-name" val="" type="text" name="poke-name">
+        </div>
+
+        <div class="container row">
+            <button id="previous-btn" class="btn primary">Previous</button>
+            <button id="get-btn" class="btn primary">Get Pokemon</button>
+            <button id="next-btn" class="btn">Next</button>
+        </div>
+    </div>
+    
+    <div id="poke-card" class="container">
+        <div id="content-poke-card">
+            <div>
+                <h3>Name: <span class="txt-light" id="poke-name-card"></span></h3>
+                <h4>ID: <span class="txt-light" id="poke-id"></span></h4>
+                <h4>Weight: <span class="txt-light" id="poke-weight"></span></h4>  
+            </div>
+            <div>
+                <img id="poke-img-front" src="" alt="pokemon front image">
+                <img id="poke-img-back" src="" alt="pokemon back image">
+            </div>
+            <div>
+                <h4>Type(s):</h4>
+                <ul id="poke-types"></ul>
+            </div>
+            <div>
+                <h4>Abilities:</h4>
+                <ul id="poke-abilities"></ul>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
